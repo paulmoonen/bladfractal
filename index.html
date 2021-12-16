@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stijlblad.css" defer>
+
+    <script src="beginwaarden.js" defer></script>
+    <script src="punten.js" defer></script>
+    <script src="opstartcode.js" defer></script>
+    <script src="knoppen.js" defer></script>
+    <title>Canvas</title>
+</head>
+
+<body>
+
+    <div id="doos">
+
+        <form>
+
+            <input type="number" min="1" max="300" id="beginlengte" value="200">
+            <label for="beginlengte">begin stengellengte</label>
+            <br>
+            <input type="range" step="0.1" id="beginhoek" value="1.5707963267948966">
+            <label for="beginhoek">begin stengelhoek</label>
+            <br>
+
+            <input type="range" min="0" max="1" step="0.1" id="verkortingHoofdnerf" value="0.7">
+            <label for="verkortingHoofdnerf">lengte hoofdnerf</label>
+            <br>
+            <input type="range" step="0.1" id="hoofdnerfHoek" value="0.17453292519943295">
+            <label for="hoofdnerfHoek">knik hoofdnerf</label>
+            <br>
+
+
+            <input type="range" min="0" max="1" step="0.1" id="verkortingLinksaf" value="0.3">
+            <label for="verkortingLinksaf">lengte linksaf</label>
+            <br>
+            <input type="range" step="0.1" id="hoekLinksaf" value="0.5235987755982988">
+            <label for="hoekLinksaf">hoek linksaf</label>
+            <br>
+
+            <input type="range" min="0" max="1" step="0.1" id="verkortingRechtsaf" value="0.4">
+            <label for="verkortingRechtsaf">lengte rechtsaf</label>
+            <br>
+            <input type="range" step="0.1" id="hoekRechtsaf" value="0.5235987755982988">
+            <label for="hoekRechtsaf">hoek rechtsaf</label>
+            <br>
+
+            <input type="number" min="1" max="8" value="8" id="aantal">
+            <label for="aantal">Aantal stappen</label>
+            <br>
+
+            <p type="button" id="startknop">Start</p>
+
+        </form>
+
+        <div id="cnvDiv">
+
+            <canvas id="canvas"></canvas>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

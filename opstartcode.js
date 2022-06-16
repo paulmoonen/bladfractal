@@ -25,7 +25,7 @@ c.strokeStyle="RGB(20,200,20)"; //lijntekenkleur
 function starten(){     
     
     //vorig plaatje wissen
-    c.clearRect(-300,000,600,600);
+    c.clearRect(-300,0,600,600);
     /*
     methode beginPath() blijkt nodig te zijn om te voorkomen 
     dat we verder gaan met het oude plaatje 
@@ -51,7 +51,7 @@ function starten(){
     
 
     //n maal de nieuwe lijnen laten tekenen    
-    n = aantalVeld.value;
+    let n = aantalVeld.value;
     aanroepReeks(n); 
         
       
